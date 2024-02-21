@@ -238,18 +238,26 @@ namespace HeroMaker
                 picture_of_hero);
             //-----END------- C# heromaker 10 hero object ---------------------------------------------------------
 
+            //-----START------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+            HeroList.hallOfFame.Add(hero);
+            //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+
+
             //------START------- C# avatar maker app 12 static list to work as a global variable ----------------------------
             //HeroList myHeroes = new HeroList(); // Problem:The scope of myHeroes is limited to the click function.
-            myHeroes.hallOfFame.Add(hero);
+            //myHeroes.hallOfFame.Add(hero);    //Error:avatarmakerapp13->because of HeroList turn to static
             //-------END------ C# avatar maker app 12 static list to work as a global variable ----------------------------
 
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);
             //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             //------START------- C# avatar maker app 12 static list to work as a global variable ----------------------------
-            MessageBox.Show("your have made " + myHeroes.hallOfFame.Count() + " different heroes");
+            //MessageBox.Show("your have made " + myHeroes.hallOfFame.Count() + " different heroes"); //Error:avatarmakerapp13->because of HeroList turn to static
             //-------END------ C# avatar maker app 12 static list to work as a global variable ----------------------------
 
+            //-----START------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+            MessageBox.Show("your have made " + HeroList.hallOfFame.Count() + " different heroes");
+            //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
         }
 
         //--------START------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
