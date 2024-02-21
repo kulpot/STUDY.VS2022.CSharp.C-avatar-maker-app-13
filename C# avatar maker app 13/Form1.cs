@@ -65,6 +65,11 @@ using System.Windows.Forms;
 
 // created HeroList.cs,
 
+//-------------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+//ref link:https://www.youtube.com/watch?v=LmZE2R2lUD4&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=5
+
+// 
+
 namespace HeroMaker
 {
     public partial class Form1 : Form
