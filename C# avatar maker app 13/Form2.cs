@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C__avatar_maker_app_12;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace C__avatar_maker_app_13
         public Form2()
         {
             InitializeComponent();
+            //-----START------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+            BindingSource bs = new BindingSource();
+            bs.DataSource = HeroList.hallOfFame;
+            listBox1.DataSource = bs;
+            //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+
         }
     }
 }

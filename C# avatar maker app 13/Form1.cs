@@ -1,4 +1,5 @@
-﻿using C__avatar_maker_app_12;
+﻿using C__avatar_maker_app_13;
+using C__avatar_maker_app_12;
 using C__heromaker_10;
 using System;
 using System.Collections.Generic;
@@ -68,7 +69,7 @@ using System.Windows.Forms;
 //-------------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
 //ref link:https://www.youtube.com/watch?v=LmZE2R2lUD4&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=5
 
-// added Form2.cs(WindowsForm), listBox1(Form2.cs)(Prop:DataSource->addProjectDataSource->object->, TextBox(Form2.cs)(Properties:Mutliline->True), button x3(Form2.cs)
+// added Form2.cs(WindowsForm)(Form2 Ref: Form2 f2 = new Form2();), listBox1(Form2.cs)(Prop:DataSource->addProjectDataSource->object->, TextBox(Form2.cs)(Properties:Mutliline->True), button x3(Form2.cs), 
 
 namespace HeroMaker
 {
@@ -257,6 +258,11 @@ namespace HeroMaker
 
             //-----START------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
             MessageBox.Show("your have made " + HeroList.hallOfFame.Count() + " different heroes");
+            //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+
+            //-----START------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
+            Form2 f2 = new Form2();
+            f2.Show();
             //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
         }
 
