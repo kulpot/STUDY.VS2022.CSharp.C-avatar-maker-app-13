@@ -8,6 +8,7 @@ namespace C__heromaker_10
 {
     public class Hero   
     {
+        //------START------ C# heromaker 10 hero object ---------------------------------------------------------
         // HeroConstructorMethod //Create->Highlight all Hero Properties->CTRL+. ->Select Create Constructor Method
         public Hero(string name, 
             bool[] specialAbilities, 
@@ -61,5 +62,7 @@ namespace C__heromaker_10
 
         public String PortraitPhoto { get; set; }
         //public string PortraitPhoto { get; set; }
+        //-----END------- C# heromaker 10 hero object ---------------------------------------------------------
+
     }
 }

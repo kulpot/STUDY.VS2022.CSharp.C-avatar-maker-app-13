@@ -80,7 +80,7 @@ namespace HeroMaker
         //----END------- C# heromaker part 09 Picturebox control Visual Studio -------------------------------
 
         //------START------- C# avatar maker app 12 static list to work as a global variable ----------------------------
-        HeroList myHeroes = new HeroList(); // Problem:The scope of myHeroes is limited to the click function.(Solution:reposition here)
+        //HeroList myHeroes = new HeroList(); // Problem:The scope of myHeroes is limited to the click function.(Solution:reposition here) //Error: avatarMakerApp13->HeroList.cs->turnTo Static
         //-------END------ C# avatar maker app 12 static list to work as a global variable ----------------------------
 
         public Form1()
