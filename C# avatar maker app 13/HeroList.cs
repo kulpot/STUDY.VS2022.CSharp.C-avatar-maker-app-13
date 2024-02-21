@@ -8,9 +8,10 @@ using C__heromaker_10;
 
 namespace C__avatar_maker_app_12
 {
-    //static class HeroList
-    public class HeroList
+    static class HeroList       // Static means that there will be exactly one copy of the list in the entire application.
+    //public class HeroList
     {
-        public List<Hero> hallOfFame = new List<Hero>();
+        static public List<Hero> hallOfFame = new List<Hero>();
+        //public List<Hero> hallOfFame = new List<Hero>();
     }
 }
