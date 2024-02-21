@@ -20,6 +20,7 @@ namespace C__avatar_maker_app_13
             BindingSource bs = new BindingSource();
             bs.DataSource = HeroList.hallOfFame;
             listBox1.DataSource = bs;
+            listBox1.DisplayMember = "Name";    //ErrorSolutionFrom:Hero class needs a ToString() method or ListBox1 needs a DisplayMember property set.
             //-----END------- C# avatar maker app 13 use a static class to store a list of objects -------------------------------
 
         }
